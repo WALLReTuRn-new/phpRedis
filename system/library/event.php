@@ -4,7 +4,6 @@
 *
 * Event System
 * 
-* https://github.com/opencart/opencart/wiki/Events-(script-notifications)-2.2.x.x
 */
 namespace WebSiteToYou\System\Library;
 class Event {
