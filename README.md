@@ -63,7 +63,7 @@ If you would like to contribute to this project, please follow these steps:
 5. Submit a pull request with a detailed description of your changes.
 
 License
-This project is licensed under the GNU General Public License v3.
+This project is licensed under the GNU General Public License v3 https://github.com/WALLReTuRn-new/phpredis/blob/main/LICENSE.
 
 Contact
 If you have any questions or suggestions regarding the project, please feel free to contact us at wallreturn@gmail.com.
