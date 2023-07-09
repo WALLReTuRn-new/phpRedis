@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+    <head>
+        <title>{{ title }}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=no">
+        {% if description %}
+            <meta name="description" content="{{ description }}"/>
+        {% endif %}
+        {% if keywords %}
+            <meta name="keywords" content="{{ keywords }}"/>
+        {% endif %}
+        <script src="{{ jquery }}" type="text/javascript"></script>
+        <link href="{{ bootstrap }}" type="text/css" rel="stylesheet" media="screen"/>
+        <link href="{{ icons }}" type="text/css" rel="stylesheet"/>
+        <link href="{{ stylesheet }}" type="text/css" rel="stylesheet"/>
+        {% for style in styles %}
+            <link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}"/>
+        {% endfor %}
+        {% for script in scripts %}
+            <script id="{{script.name}}" src="{{ script.href }}" type="text/javascript"></script>
+        {% endfor %}
+        {% for link in links %}
+            <link href="{{ link.href }}" rel="{{ link.rel }}"/>
+        {% endfor %}
+        {% for analytic in analytics %}
+            {{ analytic }}
+        {% endfor %}
+    </head>
+    <body class="app">
+        

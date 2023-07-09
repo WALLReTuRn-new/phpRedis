@@ -1,0 +1,18 @@
+
+<!-- End Bottom Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+
+<script id="j-backtoptop" src="{{ jbacktoptop }}" type="text/javascript"></script>
+<script id="j-popper" src="{{ jpopper }}" type="text/javascript"></script>
+<script id="j-bootstrap" src="{{ jbootstrap }}" type="text/javascript"></script>
+<script id="j-common" src="{{ jcommon }}" type="text/javascript"></script>
+
+<!-- Copyright Ends -->
+{% for script in scripts %}
+    <script id="{{script.name}}" src="{{ script.href }}" type="text/javascript"></script>
+{% endfor %}
+</body>
+</html>
